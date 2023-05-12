@@ -1,0 +1,69 @@
+:root {
+    --if-green: #69C04B;
+    --if-red: #FB0000;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--font-family);
+}
+.button:hover {
+    background-color: #00420c;
+}
+
+/*home*/
+section#home {
+    height: 100vh;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.apresentacao h1 {
+    font-size: 102px;
+    line-height: 1;
+}
+
+.apresentacao .info .button-container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 100%;
+    color: #fff;
+    background-color: var(--if-green);
+    border: 0; /*REMOVE AS BORDAS DO BUTTON*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    cursor: pointer; /*transforma o cursor em uma maozinha quando o mouse passa por cima do button*/
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+/* final home*/
+
+/*logo*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
